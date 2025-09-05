@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Janala 2.0</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Tailwind+DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="max-w-[1920px] mx-auto bg-white">
+    <header>
+      <nav>
+        <div
+          class="navbar bg-base-100 shadow-sm px-[4%] border-b-[1px] border-[#C6BDBD] bg-[#BADEFF42] h-[96px]"
+        >
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <a class="text-[#422AD5]">
+                    <i class="fa-solid fa-circle-question"></i> FAQ
+                  </a>
+                </li>
+                <li>
+                  <a class="text-[#422AD5]">
+                    <i class="fa-solid fa-book-open"></i> Learn
+                  </a>
+                </li>
+                <li>
+                  <a class="text-[#422AD5]">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a href="#" class="text-xl flex gap-1 items-center text-[20px]">
+              <span class="text-[#18181B] font-semibold">English</span>
+              <img
+                class="h-[40px] w-[40px]"
+                src="./assets/logo.png"
+                alt="english Janala"
+              />
+              <span class="tiro-Bangla font-medium">জানালা</span>
+            </a>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 flex gap-4">
+              <li>
+                <button
+                  class="btn text-[#422AD5] border-[1px] border-[#422AD5]"
+                >
+                  <i class="fa-solid fa-circle-question"></i> FAQ
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn text-[#422AD5] border-[1px] border-[#422AD5]"
+                >
+                  <i class="fa-solid fa-book-open"></i> Learn
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn text-[#422AD5] border-[1px] border-[#422AD5]"
+                >
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section
+          class="flex flex-col-reverse md:flex-row items-center w-11/12 mx-auto gap-5 my-4"
+        >
+          <aside class="content flex-1 text-center md:text-start">
+            <h1 class="text-5xl font-bold text-[#18181B]">
+              <span class="text-[#00BCFF]">English</span> is Easy!!
+            </h1>
+            <p class="bangla text-[24px] text-[#18181B] opacity-80 mt-6 mb-10">
+              আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+              আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
+              যাবে অন্য একটি Level এ
+            </p>
+            <div class="">
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                class="input inline-block"
+              />
+              <input
+                type="password"
+                placeholder="*************"
+                class="input inline-block md:block mt-5 mb-5"
+              />
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </aside>
+          <aside class="img-container flex-1 flex justify-end">
+            <img src="./assets/hero-student.png" alt="hero image" />
+          </aside>
+        </section>
+      </nav>
+    </header>
+
+    <main class="w-11/12 mx-auto mt-[200px]">
+      <!-- Lesson Title  -->
+      <section class="text-center my-5">
+        <h1 class="text-4xl font-bold text-[#18181B]">
+          <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+        </h1>
+      </section>
+
+      <!-- Lesson Button Container   -->
+      <section
+        id="lessonContainer"
+        class="flex gap-3 justify-center py-5 flex-wrap"
+      >
+        <!-- <button class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Lesson-1</button> -->
+      </section>
+
+      <!-- Search Container  -->
+      <section class="flex justify-center py-5">
+        <label class="input">
+          <svg
+            class="h-[1em] opacity-50"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <g
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              stroke-width="2.5"
+              fill="none"
+              stroke="currentColor"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.3-4.3"></path>
+            </g>
+          </svg>
+          <input id="searchWord" type="search" required placeholder="Search" />
+        </label>
+        <button id="searchBtn" class="btn btn-primary">
+          <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+      </section>
+
+      <!-- Words Container  -->
+      <section
+        id="wordContainer"
+        class="bg-[#F8F8F8] rounded-[24px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] p-[30px] w-full my-10"
+      >
+
+        <!-- Default Container  -->
+        <div id="DefaultContainer" class="text-center py-[64px] col-span-full">
+          <p class="text-[#79716B] bangla mb-3">
+            আপনি এখনো কোন Lesson Select করেননি।
+          </p>
+          <h2 class="text-[#292524] text-[34px] bangla font-medium">
+            একটি Lesson Select করুন।
+          </h2>
+        </div>
+
+      </section>
+
+      <!-- FAQ Section  -->
+      <section class="mt-[200px]">
+        <!-- Section Title  -->
+        <h1 class="text-4xl font-bold text-[#18181B] text-center mb-[80px]">
+          <span class="text-[#00BCFF]">Frequently</span> Asked Questions
+        </h1>
+
+        <!-- Question Section  -->
+        <div class="flex flex-col gap-5">
+          <div class="collapse collapse-plus bg-[#F8F8F8]">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-medium text-[#18181B]">
+              1. How can I start learning English on this website?
+            </div>
+            <div class="collapse-content text-[#62748E]">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-[#F8F8F8]">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-medium text-[#18181B]">
+              2. Is this website free to use?
+            </div>
+            <div class="collapse-content text-[#62748E]">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-[#F8F8F8]">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-medium text-[#18181B]">
+              3. 3. Do I need to create an account?
+            </div>
+            <div class="collapse-content text-[#62748E]">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-[#F8F8F8]">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-medium text-[#18181B]">
+              4. How can I build my English vocabulary?
+            </div>
+            <div class="collapse-content text-[#62748E]">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-[#F8F8F8]">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-medium text-[#18181B]">
+              5. Do you offer certificates for completed courses?
+            </div>
+            <div class="collapse-content text-[#62748E]">
+              You can start by exploring our beginner lessons, interactive
+              exercises, and quizzes. We also offer structured courses to guide
+              you step by step.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-[200px] border-t-[3px] border-[#FFEBEB] h-[325px]">
+      <div
+        class="w-11/12 mx-auto h-full flex flex-col md:flex-row items-center md:justify-between gap-5 md:gap-0 mt-[80px] md:mt-0"
+      >
+        <div class="flex flex-col justify-center items-center md:items-start">
+          <a href="#" class="text-xl flex gap-1 items-center text-[20px]">
+            <span class="text-[#18181B] font-semibold">English</span>
+            <img
+              class="h-[40px] w-[40px]"
+              src="./assets/logo.png"
+              alt="english Janala"
+            />
+            <span class="tiro-Bangla font-medium">জানালা</span>
+          </a>
+          <h2 class="bangla text-[20px] text-[#000000] font-medium mt-2 mb-1">
+            ইংরেজি শিখুন সহজে
+          </h2>
+          <p class="text-[#000000] bangla">
+            &copy; All right reserved
+            <a href="#">
+              <span class="font-semibold">
+                <span class="text-[#00BCFF]">English</span> জানালা</span
+              >
+            </a>
+          </p>
+        </div>
+        <div class="text-center">
+          <p class="text-[#18181B] opacity-60 font-semibold">FOLLOW US</p>
+          <div class="flex gap-2 items-center justify-center text-[20px]">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
