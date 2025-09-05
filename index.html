@@ -86,14 +86,16 @@
           <div class="navbar-end hidden lg:flex">
             <ul class="menu menu-horizontal px-1 flex gap-4">
               <li>
-                <button onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})"
+                <button
+                  onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})"
                   class="btn text-[#422AD5] border-[1px] border-[#422AD5]"
                 >
                   <i class="fa-solid fa-circle-question"></i> FAQ
                 </button>
               </li>
               <li>
-                <button onclick="document.getElementById('learn').scrollIntoView({behavior:'smooth'})"
+                <button
+                  onclick="document.getElementById('learn').scrollIntoView({behavior:'smooth'})"
                   class="btn text-[#422AD5] border-[1px] border-[#422AD5]"
                 >
                   <i class="fa-solid fa-book-open"></i> Learn
@@ -189,7 +191,6 @@
         id="wordContainer"
         class="bg-[#F8F8F8] rounded-[24px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] p-[30px] w-full my-10"
       >
-
         <!-- Default Container  -->
         <div id="DefaultContainer" class="text-center py-[64px] col-span-full">
           <p class="text-[#79716B] bangla mb-3">
@@ -199,7 +200,6 @@
             একটি Lesson Select করুন।
           </h2>
         </div>
-
       </section>
 
       <!-- FAQ Section  -->
@@ -306,6 +306,21 @@
         </div>
       </div>
     </footer>
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div
+          id="modal-content"
+          class="border-2 border-[#EDF7FF] rounded-[12px] p-6"
+        ></div>
+        <div class="modal-action">
+          <form method="dialog" class="flex items-start">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn active">Complete Learning</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
