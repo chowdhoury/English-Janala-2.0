@@ -16,3 +16,6 @@
     border: 1px solid #422AD5;
     color: #fff;
 }
+html {
+  scroll-behavior: smooth;
+}

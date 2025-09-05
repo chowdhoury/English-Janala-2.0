@@ -57,12 +57,12 @@
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
                 <li>
-                  <a class="text-[#422AD5]">
+                  <a href="#faq" class="text-[#422AD5]">
                     <i class="fa-solid fa-circle-question"></i> FAQ
                   </a>
                 </li>
                 <li>
-                  <a class="text-[#422AD5]">
+                  <a href="#learn" class="text-[#422AD5]">
                     <i class="fa-solid fa-book-open"></i> Learn
                   </a>
                 </li>
@@ -86,14 +86,14 @@
           <div class="navbar-end hidden lg:flex">
             <ul class="menu menu-horizontal px-1 flex gap-4">
               <li>
-                <button
+                <button onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})"
                   class="btn text-[#422AD5] border-[1px] border-[#422AD5]"
                 >
                   <i class="fa-solid fa-circle-question"></i> FAQ
                 </button>
               </li>
               <li>
-                <button
+                <button onclick="document.getElementById('learn').scrollIntoView({behavior:'smooth'})"
                   class="btn text-[#422AD5] border-[1px] border-[#422AD5]"
                 >
                   <i class="fa-solid fa-book-open"></i> Learn
@@ -142,7 +142,7 @@
       </nav>
     </header>
 
-    <main class="w-11/12 mx-auto mt-[200px]">
+    <main class="w-11/12 mx-auto mt-[200px]" id="learn">
       <!-- Lesson Title  -->
       <section class="text-center my-5">
         <h1 class="text-4xl font-bold text-[#18181B]">
@@ -203,7 +203,7 @@
       </section>
 
       <!-- FAQ Section  -->
-      <section class="mt-[200px]">
+      <section id="faq" class="mt-[200px]">
         <!-- Section Title  -->
         <h1 class="text-4xl font-bold text-[#18181B] text-center mb-[80px]">
           <span class="text-[#00BCFF]">Frequently</span> Asked Questions
